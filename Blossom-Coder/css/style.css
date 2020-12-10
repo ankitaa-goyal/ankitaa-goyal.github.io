@@ -1,0 +1,867 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo:200,300,400,600,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700,700i,800,800i&display=swap');
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0 auto;
+    font-family: 'Cairo', sans-serif;
+}
+body{
+    overflow-x: hidden !important;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: 600;
+}
+p{
+    font-size: 20px;
+    font-weight: 300;
+}
+a, button, span, img{
+    display: inline-block;
+}
+.header, .banner, .about, .services, .portfolio, section, header{
+    float: left;
+    width: 100%;
+    height: 1000px;
+    padding: 0;
+    margin: 0 auto;
+}
+.container {
+    max-width: 1145px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+.container-height{
+    max-height: 1000px;
+    height: 100vw;
+    margin: 0 auto;
+    padding: 0;
+}
+.inner-container{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+.col-1{
+    width: 100%;
+    float: left;
+}
+.col-2{
+    width: 50%;
+    float: left;
+}
+.col-3{
+    width: 33.3%;
+    float: left;
+}
+.col-4{
+    width: 25%;
+    float: left;
+}
+.col-5{
+    width: 20%;
+    float: left;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style-type: none;
+}
+button, a {
+    text-decoration: none;
+    outline: none;
+}
+
+.header {
+    background-color: transparent;
+    height: 73px;
+    padding-top: 35px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.header .menu-icon {
+    float: right;
+}
+.logo {
+    float: left;
+}
+.logo-img {
+    width: 100%;
+}
+header .logo{
+    float: left;
+}
+.menu-icon a img {
+    width: 100%;
+    height: auto;
+}
+.abc{width:100%;}
+.banner, .menu, .about, .services, .service1, .service2, .service3, .service4, .service5, .portfolio {
+    position: relative;
+    background-color: #000;
+}
+.banner::before, .menu::before, .about::before, .services::before, .service1::before,
+.service2::before, .service3::before, .service4::before, .service5::before, .portfolio::before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1000px;
+    opacity: 0.2;
+    background: url("../images/1.jpg") no-repeat center center;
+    background-size: cover;
+}
+.bg-opacity {
+    width: 100%;
+    position: relative;
+}
+.bg-content {
+    width: 100%;
+    position: absolute;
+    top: -128px;
+    left: 0;
+}
+.bg-company-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 157px;
+    font-weight: 500;
+    color: #615e5e;
+    opacity: 0.1;
+    letter-spacing: 53px;
+}
+.banner-content {
+    margin-left: 102px;
+    margin-top: 265px;
+    width: 530px;
+}
+.content {
+    width: 100%;
+}
+.content h2 {
+    font-size: 60px;
+    font-weight: 600;
+    color: #bebcbc;
+    line-height: 85px;
+    letter-spacing: 7px;
+    margin: 0;
+    position: relative;
+}
+.content h2 span{
+    color: #07c807;
+    display: block;
+}
+.content-box::before{
+    content: url("../images/box.png");
+    display: block;
+    position: absolute;
+    left: -73px;
+    top: -18px;
+    width: 100%;
+}
+.content p {
+    font-size: 20px;
+    font-weight: 300;
+    color: #bfbcbc;
+    line-height: 30px;
+    margin: 10px 0 20px;
+}
+.scroll {
+    width: 100%;
+    margin-top: 80px;
+    text-align: center;
+}
+.scroll p {
+    font-weight: 300;
+    font-size: 20px;
+    color: #07c807;
+    letter-spacing: 6px;
+    margin: 0 0 47px;
+}
+.scroll a {
+    width: 45px;
+    height: 45px;
+}
+.menu {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    transition: 0.5s;
+  }
+.menu::before{
+    background: url("../images/2.jpg") no-repeat center center;
+    background-size: cover;
+}
+.menu-head{
+    padding-top: 35px;
+}
+.menu .logo{
+    float: left;
+}
+.menu .close {
+    width: 100%;
+    text-align: right;
+}
+.menu .banner-content {
+    margin-left: 250px;
+    margin-top: 145px;
+}
+ a{
+    color: #565454;
+    font-weight: 400;
+}
+.menu .content .blossom a h3{
+    font-size: 60px;
+    font-family: 'EB Garamond', serif;
+    margin: 0 auto;
+}
+.menu .content .blossom a h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    margin: 0px auto 65px;
+    letter-spacing: 10px;
+}
+.blossom:hover .blossom-heading{
+    color: #827e7e;
+    text-decoration: line-through solid #00ff00;
+}
+.blossom:hover .blossom-title{
+    color: #00ff00;
+}
+.social-media {
+    float: left;
+    position: absolute;
+    bottom: 65px;
+    left: 0;
+}
+.social-media ul {
+    margin: 0;
+}
+.social-media ul li a img{
+    width: 100%;
+}
+.address {
+    font-family: 'EB Garamond', serif;
+    width: 270px;
+    font-size: 25px;
+    text-align: right;
+    color: #827e7e;
+    float: right;
+    position: absolute;
+    bottom: 76px;
+    right: 0;
+}
+.address ul li a{
+    color: #00ff00;
+}
+
+.about::before{
+    background: url("../images/3.jpg") no-repeat center center;
+    background-size: cover;
+}
+.about .banner-content {
+    margin-top: 250px;
+}
+.bg-title {
+    font-weight: 600;
+    font-size: 70px;
+    color: #565454;
+    opacity: 0.3;
+    letter-spacing: 25px;
+    margin-bottom: -56px;
+    margin-top: -42px;
+}
+.about .content h2, .services .content h2{
+    font-size: 55px;
+}
+.about .content h2 span, .services .content h2 span{
+    color: #00ff00;
+}
+.services::before{
+    background: url("../images/4.jpg") no-repeat center center;
+    background-size: cover;
+}
+.services .banner-content {
+    width: 802px;
+}
+.service-list {
+    width: 100%;
+}
+.service-list ul li {
+    padding: 25px 0;
+    position: relative;
+}
+.service-list ul li a {
+    font-size: 30px;
+    font-weight: 300;
+    color: #dadcda;
+    line-height: 35px;
+}
+.col-2:nth-child(2) {
+    display: flex;
+    justify-content: flex-end;
+}
+.services .bg-title {
+    letter-spacing: 30px;
+}
+.hover-service::before {
+    content: url(../images/arrow.png);
+    display: none;
+    position: absolute;
+    left: -48px;
+    top: 26px;
+    width: 100%;
+}
+.service-list ul li a:hover{
+    color: #dadcda;
+    font-weight: 600;
+}
+.service-list li:hover .hover-service:before {
+    display: block;
+}
+.service1::before, .service2::before, .service3::before, .service4::before, .service5::before{
+    background: url("../images/5.jpg") no-repeat center center;
+    background-size: cover;
+}
+.service1 .banner-content{
+    width: 595px;
+}
+.service2 .banner-content, .service3 .banner-content, .service4 .banner-content{
+    width: 722px;
+}
+.service5 .banner-content{
+    width: 485px;
+}
+.service-title::before {
+    content: url(../images/arrow.png);
+    display: block;
+    position: absolute;
+    left: -42px;
+    top: -15px;
+    width: 100%;
+}
+.service-title::after {
+    content: url(../images/color.png);
+    display: block;
+    position: absolute;
+    left: 539px;
+    top: -6px;
+    width: 100%;
+}
+.back {
+    position: absolute;
+    bottom: -252px;
+    left: 0;
+}
+.service2 .service-title::after {
+    left: 662px;
+}
+.service3 .service-title::after {
+    left: 667px;
+}
+.service4 .service-title::after {
+    left: 651px;
+}
+.service5 .service-title::after {
+    left: 427px;
+}
+
+.portfolio::before{
+    background: url("../images/6.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.portfolio-gallery {
+    margin-top: 20px;
+}
+.portfolio .bg-content {
+    top: 0;
+}
+.portfolio .banner-content {
+    margin-top: 153px;
+}
+.row {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px;
+    grid-column-gap: 112px;
+    grid-row-gap: 46px;
+    justify-content: center;
+}
+.row, div#portfolio-btn {
+    width: 100%;
+    float: left;
+}
+div#portfolio-btn{
+    margin-top: 40px;
+}
+.column {
+    float: left;
+    display: none;
+}
+.portfolio-img {
+    background-color: #000;
+    height: 200px;
+    width: 200px;
+    position: relative;
+}
+.portfolio-img img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover; 
+}
+.port-img-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    text-align: center;
+    padding-top: 166px;
+    /*display: none;*/
+}
+.port-img-hover button {
+    border: none;
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    background: #504747ad;
+    font-size: 20px;
+}
+.portfolio-img img:hover.port-img-hover{
+    opacity: 1;
+    display: block;
+}
+.show {
+    display: block;
+}
+.btn {
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0 15px;
+    color: #e4e9e4;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+.btn:hover {
+    color: #00ff00;
+}
+.btn.port-active {
+    color: #00ff00;
+    border-bottom: 1px solid #00ff00;
+}
+
+.slick-dots {
+    bottom: 90px;
+   /* right: -585px;*/
+    text-align: right;
+    display: flex;
+    flex-flow: wrap column;
+}
+.slick-dots li {
+    display: block;
+    margin: 7px auto;
+}
+.slick-dots li.slick-active button:before {
+    color: #00ff00;
+    opacity: 1;
+}
+.slick-dots li button:before {
+    font-size: 80px;
+}
+img.scroll-button {
+    margin: auto !important;
+}
+.slick-next {
+    right: 0;
+    display: none;
+}
+/*.slick-track {
+    width: 100% !important;
+}*/
+div#slick-slide00, div#slick-slide01, div#slick-slide02, div#slick-slide04 {
+    padding: 0;
+
+}
+.sadas{float: left; width: 100%; margin-top:50px;}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2; 
+    padding-top: 150px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    text-align: center;
+}
+.modal-content {
+    background-color: #fafafa;
+    margin: 0 auto;
+    padding: 20px 30px;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+}
+.modal-content p {
+    font-size: 20px;
+    color: #000;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin: 0px 0 50px;
+}
+.modal-close {
+    color: #00ff00;
+    float: right;
+    font-size: 28px;
+    font-weight: 100;
+    cursor: pointer;
+}
+.portfolio-img img.modal-img {
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.modal-img:hover {
+    animation: zoom 5s ease-in-out;
+    
+}
+@keyframes zoom{
+    50%{
+        transform: scale(1.5,1.5);
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .header {
+        padding: 35px 15px 0 15px;
+    }
+    .bg-content {
+        top: -125px;
+    }
+    .bg-company-name {
+        letter-spacing: 25px;
+        font-size: 155px;
+    }
+    .row {
+        grid-column-gap: 56px;
+    }
+    .menu-head {
+        padding: 35px 15px 0 15px;
+        margin: 0 15px;
+    }
+    .social-media {
+        margin-left: 15px;
+        bottom: -180px;
+    }
+    .address {
+        margin-right: 15px;
+        bottom: -180px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    
+    .fp-tableCell, .fp-section.fp-table, .fp-slide.fp-table{
+        height: auto  !important;
+    } 
+    .container {
+        max-width: 942px;
+    }
+    .bg-content {
+        top: -168px;
+    }
+    .bg-company-name {
+        font-size: 130px;
+        letter-spacing: 14px;
+    }
+    .bg-opacity {
+        padding: 0 15px;
+    }
+    .bg-title {
+        font-size: 60px;
+    }
+    .content h2 {
+        font-size: 50px;
+    }
+    .inner-container {
+        max-width: 960px;
+    }
+    .banner-content {
+        margin-left: 0;
+        margin-top: 255px;
+        width: 100%;
+    }
+    .content-box::before {
+        display: none;
+    }
+    .scroll {
+        margin-top: 180px;
+    }
+    .scroll p {
+        margin: 0 0 35px;
+    }
+    .services .banner-content {
+        width: 100%;
+    }
+    .services .bg-content {
+        top: 0px;
+    }
+    .service-list .col-2 {
+        width: 100%;
+        float: left;
+    }
+    .service-list .col-2:nth-child(2) {
+        display: block;
+    }
+    .service-list ul li {
+        padding: 20px 0px 20px 15px;
+    }
+    .services .banner-content {
+        margin-left: 5px;
+        margin-top: 142px;
+    }
+    .about .content h2, .services .content h2 {
+        font-size: 45px;
+    }
+    .portfolio .banner-content {
+        margin-top: 150px;
+        margin-left: 0px;
+    }
+    .row {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 200px 200px 200px;
+        grid-column-gap: 75px;
+    }
+    .menu .banner-content {
+        margin-left: 150px;
+        margin-top: 60px;
+    }
+    .social-media {
+        bottom: -195px;
+    }
+    .address {
+        bottom: -190px;
+    }
+    .menu .content .blossom a h6 {
+        margin: 0px auto 40px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .header, .banner, .about, .services, .portfolio, section, header {
+        height: auto;
+    }
+    .banner::before, .menu::before, .about::before, .services::before, .service1::before, 
+    .service2::before, .service3::before, .service4::before, .service5::before, .portfolio::before {
+        height: 100%;
+    }
+    .bg-content {
+        top: -20px;
+    }
+    .banner-content {
+        margin-left: 0;
+        margin-top: 120px;
+        width: 100%;
+    }
+    .bg-company-name {
+        font-size: 102px;
+        letter-spacing: 10px;
+    }
+    .content h2 {
+        font-size: 45px;
+        line-height: 65px;
+        letter-spacing: 5px;
+    }
+    .scroll {
+        margin: 180px auto 80px;
+    }
+    .about .banner-content {
+        margin: 132px auto 190px;
+    }
+    .services .banner-content {
+        margin-top: 120px;
+        margin-left: 0px;
+    }
+    .services .bg-content {
+        top: -16px;
+    }
+    .service-list .col-2:nth-child(2) {
+        margin-bottom: 90px;
+    }
+    .bg-title {
+        letter-spacing: 15px;
+        margin-bottom: -48px;
+    }
+    .portfolio .bg-content {
+        top: -14px;
+    }
+    .portfolio .banner-content {
+        margin-top: 120px;
+    }
+    .row {
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 200px 200px 200px 200px;
+    }
+    .menu-head {
+        padding: 35px 0px 0 0px;
+        margin: 0;
+    }
+    .menu .content .blossom a h3 {
+        font-size: 45px;
+    }
+    .menu .content .blossom a h6 {
+        margin: 0px auto 20px;
+        font-size: 20px;
+        letter-spacing: 6px;
+    }
+    .menu .banner-content {
+        margin-left: 90px;
+        margin-top: 40px;
+    }
+    .social-media {
+        bottom: -251px;
+    }
+    .address {
+        bottom: -242px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .bg-content {
+        display: none;
+    }
+    .bg-company-name {
+        font-size: 55px;
+        letter-spacing: 5px;
+    }
+    .bg-content {
+        top: -24px;
+    }
+    .banner-content {
+        margin-top: 122px;
+    }
+    .content h2 {
+        font-size: 34px;
+        line-height: 40px;
+        letter-spacing: 3px;
+    }
+    .scroll {
+        margin: 85px auto 50px;
+    }
+    .bg-title {
+        letter-spacing: 3px;
+        line-height: 118px;
+        font-size: 45px;
+        margin-bottom: -45px;
+    }
+    .about .bg-content {
+        top: 0px;
+    }
+    .about .banner-content {
+        margin: 110px auto 120px;
+    }
+    .services .bg-title {
+        letter-spacing: 5px;
+    }
+    .about .content h2, .services .content h2 {
+        font-size: 36px;
+    }
+    .services .banner-content {
+        margin-top: 122px;
+    }
+    .service-list ul li {
+        padding: 15px 0px 0px 15px;
+    }
+    .service-list ul li a {
+        font-size: 25px;
+    }
+    .portfolio .banner-content {
+        margin-top: 122px;
+        margin-left: 0px;
+        text-align: center;
+    }
+    .row {
+        grid-template-columns: 200px;
+        grid-template-rows: 200px 200px 200px 200px 200px;
+    }
+    div#portfolio-btn {
+        margin: 40px auto 90px;
+        text-align: center;
+    }
+    .btn {
+        color: #00ff00;
+        border: 1px solid #00ff00;
+        background: transparent;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 20px 15px;
+    }
+    .btn.port-active {
+        color: #000;
+        background-color: #00ff00;
+    }
+    .menu-head {
+        padding: 35px 0px 0 0px;
+        margin: 0 10px;
+    }
+    .menu .banner-content {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .blossom {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .menu .content .blossom a h3 {
+        font-size: 35px;
+    }
+    .menu .content .blossom a h6 {
+        margin: 0px auto 15px;
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+    .social-media ul {
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+    }
+    .social-media {
+        width: 100%;
+        bottom: -140px;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .social-media li {
+        margin: 0 3px;
+    }
+    .address {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-right: 0;
+        left: 26px;
+        bottom: -260px;
+    }
+}

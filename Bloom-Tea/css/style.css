@@ -1,0 +1,580 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0 auto;
+}
+a, button, span, img{
+    display: inline-block;
+    outline: none;
+}
+.container{
+    max-width: 1114px;
+    width: 100%;
+    margin: 0 auto;
+}
+ul, li{
+    list-style-type: none;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+button, a {
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+}
+.col-1, .row{
+    width: 100%;
+    float: left;
+}
+.col-2{
+    width: 50%;
+    float: left;
+}
+.col-3{
+    width: 33.3%;
+    float: left;
+}
+.col-4{
+    width: 25%;
+    float: left;
+}
+.col-6{
+    width: 66.7%;
+    float: left;
+}
+.header, section, footer{
+    width: 100%;
+    float: left;
+}
+.header {
+    padding: 41px 0;
+    background: #0000004f;
+    position: fixed;
+    z-index: 100;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+.menu{
+    width: 40%;
+    float: left;
+    font-size: 15px;
+}
+button.openbtn, button.closebtn {
+    float: left;
+    position: relative;
+    color: #fff;
+    background: transparent;
+    border: none;
+    display: none;
+    outline: none;
+}
+.logo {
+    width: 20%;
+    float: left;
+    text-align: center;
+    font-size: 20px;
+}
+.account-menu {
+    width: 40%;
+    float: left;
+    text-align: end;
+    font-size: 17px;
+}
+.menu li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.account-menu ul {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+.account-menu li{
+    display: inline-block;
+    padding: 0 14px;
+}
+.account-menu ul li a i.fa.fa-user-circle {
+    padding: 0 14px;
+}
+.account-menu i {
+    font-size: 21px;
+}
+.banner{
+    background: #000 url("../images/banner.jpg") no-repeat fixed;
+    background-size: 100% 100%;
+    height: 100vh;
+    position: relative;
+}
+.banner-text {
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    position: absolute;
+    left: 30%;
+    top: 35%;
+}
+.banner-text h1{
+    font-size: 48px;
+    color: #fff;
+    font-weight: 100;
+}
+.banner-text h1 span{
+    font-style: italic;
+}
+.shop {
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 100;
+    padding: 10px 25px;
+    transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+}
+.shop:hover {
+    border: none;
+    background-color: #ffffff5c;
+}
+.arrival-heading{
+    text-align: center;
+    color: #242A35;
+}
+.arrival-heading h5{
+    font-size: 36px;
+    font-style: italic;
+    margin: 90px 0 0;
+}
+.arrival-heading p{
+    font-size: 17px;
+    line-height: 1.5em;
+    margin-bottom: 60px;
+}
+.arrival-slider{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tea-slider{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.tea-packet {
+    margin: 15px;
+}
+.tea-sample{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+.tea-sample button {
+    color: #242A35;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    font-size: 15px;
+    position: absolute;
+    bottom: 64px;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+}
+.tea-slider:hover .tea-sample{
+    display: block;
+}
+.tea-slider img{
+    width: 100%;
+}
+.product-detail{
+    padding: 15px 0 0;
+    text-align: center;
+    font-weight: 100;
+    color: #242A35;
+}
+.product-detail h3{
+    font-size: 22px;
+    font-style: italic;
+    margin: 0;
+}
+.product-detail div.price{
+    margin: 5px 0 0;
+}
+.view-all{
+    margin: 63px 0 66px;
+    width: 100%;
+    text-align: center;
+}
+.view-all a{
+    background-color: rgba(36, 42, 53, 1);
+    cursor: pointer !important;
+    font-size: 17px;
+    font-weight: 100;
+    color: #fff;
+    padding: 10px 25px;
+}
+.view-all a:hover{
+    background-color: rgba(125, 124, 124, 1);
+
+}
+.blog{
+    background: #000 url("../images/blog-bg.jpg") no-repeat fixed;
+    background-size: 100% 100%;
+    height: 60vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blog-heading{
+    text-align: center;
+    color: #fff;
+    font-style: italic;
+}
+.blog-heading h5 a{
+    font-size: 36px;
+    font-weight: 100;
+}
+.testimonial{
+    background-color: rgb(36, 42, 53);
+    color: #fff;
+    width: 100%;
+    height: 450px;
+    text-align: center;
+}
+.comments{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.quote h6{
+    font-size: 22px;
+    font-style: italic;
+    margin-bottom: 0;
+}
+.author p{
+    font-size: 17px;
+    font-weight: 100;
+}
+.footer{
+    color: #242A35;
+    background-color: rgba(230, 231, 234, 1);
+}
+.upper-footer{
+    border-bottom: 0px solid rgba(65, 65, 65, 1);
+    margin: 91px calc((100% - 980px) / 2) 0;
+    width: 980px;
+    float: left;
+}
+.bottom-footer{
+    border-top: 1px solid rgba(65, 65, 65, 1);
+    width: 980px;
+    margin: 0 calc((100% - 980px) / 2);
+    float: left;
+}
+.know-more h5 {
+    line-height: 1.2em;
+    font-style: italic;
+    font-size: 36px;
+    font-weight: 400;
+    margin: 0 0 25px;
+    padding-left: 9px;
+}
+.footer ul li a {
+    line-height: 1.7em;
+    font-size: 17px;
+    font-weight: 100;
+}
+.help{
+    margin: 0 0 45px 143px;
+}
+.help p{
+    line-height: 1.3em;
+    font-size: 20px;
+    margin: 47px 0px 0px 9px;
+    padding: 0 0 13px 0px;
+    border-bottom: 1px solid #000;
+}
+.help ul, .follow-us ul {
+    margin-top: 40px;
+}
+.follow-us {
+    margin: 0 0 77px 120px;
+}
+.follow-us p {
+    line-height: 1.3em;
+    font-size: 20px;
+    margin: 47px 0px 0px 9px;
+    padding: 0 0 13px 0px;
+    border-bottom: 1px solid #000;
+}
+.newsletter{
+    margin: 0 0 29px 143px;
+}
+.newsletter form {
+    height: 99px;
+}
+.newsletter form input{
+    padding: 3px 3px 3px 21px;
+    margin: 12px 0px 7px 0;
+    text-align: left;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 1);
+    color: #414141;
+    width: 371px;
+    height: 45px;
+}
+.newsletter button{
+    width: 127px;
+    height: 44px;
+    margin: 12px 0px 7px 0;
+    background-color: rgba(36, 42, 53, 1);
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 100;
+}
+.copyright{
+    margin: 22px 0 30px;
+}
+.copyright p{
+    line-height: 1.7em;
+    margin: 0;
+    font-size: 17px;
+    font-weight: 100;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    
+}
+
+@media only screen and (max-width: 992px) {
+    .banner-text {
+        left: 20%;
+    }
+    .upper-footer {
+        margin: 91px 50px 0;
+        width: 87%;
+    }
+    .help {
+        margin: 0 0 45px 73px;
+    }
+    .follow-us {
+        margin: 0 0 77px 73px;
+    }
+    .newsletter {
+        margin: 15px 0 29px 73px;
+    }
+    .newsletter form input {
+        width: 230px;
+    }
+    .contact {
+        margin-top: 20px;
+    }
+    .bottom-footer {
+        width: 100%;
+        margin: 0;
+    }
+    .copyright {
+        margin: 22px 50px 30px;
+    }
+    .menu li {
+        padding: 0 8px;
+    }
+    .account-menu li {
+        padding: 0 8px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .header {
+        padding: 30px 0;
+    }
+    .menu {
+        width: 35%;
+        padding-left: 15px;
+    }
+    .logo {
+        width: 30%;
+    }
+    .account-menu {
+        width: 35%;
+        padding-right: 15px;
+    }
+    .account-menu li {
+        padding: 0 4px;
+    }
+    .account-menu ul li a i {
+        font-size: 18px;
+    }
+    .account-menu ul li a i.fa.fa-user-circle {
+        padding: 0 7px;
+    }
+    button.openbtn {
+        display: block;
+        top: 0px;
+        padding: 0;
+    }
+    i.fa.fa-bars {
+        font-size: 20px;
+    }
+    .top-menu{
+        display: none;
+    }
+    .top-menuresponsive {
+        display: block;
+        width: 150px;
+        list-style-type: none;
+        margin: 0;
+        padding: 45px 15px 20px 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #242a35;
+        box-shadow: 0px 0px 7px rgba(245, 238, 238, 0.58);
+        z-index: 1;
+    }
+    button.closebtn {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        color: #fff;
+    }
+    i.fa.fa-times {
+        font-size: 18px;
+    }
+    .top-menuresponsive li {
+        top: 25px;
+        font-size: 16px;
+        padding: 5px 0;
+        line-height: 1.4;
+        display: inherit;
+    }
+    .account-menu .social-media{
+        display: none;
+    }
+    .banner-text {
+        left: 25%;
+    }
+    .banner-text h1 {
+        font-size: 40px;
+    }
+    .upper-footer {
+        margin: 50px 30px 0;
+        width: 90%;
+    }
+    .upper-footer .row .col-3:first-child{
+        width: 100%;
+        float: left;
+    }
+    .upper-footer .row .col-3:nth-child(2), .upper-footer .row .col-3:nth-child(3){
+        width: 100%;
+        float: left;
+    }
+    .know-more h5{
+        padding-left: 0;
+        margin: 0 0 20px;
+    }
+    .know-more ul li {
+        display: inline-block;
+        padding-right: 35px;
+    }
+    .help {
+        margin: 0 0 0px 0px;
+    }
+    .help p, .follow-us p {
+        margin: 47px 0 0px 0px;
+        width: 20%;
+        padding: 0px 0 10px 0px;
+    }
+    .help ul, .follow-us ul {
+        margin-top: 20px;
+    }
+    .help ul li, .follow-us ul li {
+        display: inline-block;
+        padding-right: 30px;
+    }
+    .follow-us {
+        margin: 0 0 25px 0px;
+    }
+    .upper-footer .row .col-6{
+        width: 100%;
+        float: left;
+    }
+    .newsletter {
+        margin: 15px 0 29px 0px;
+    }
+    .newsletter form {
+        height: 80px;
+    }
+    .newsletter form input {
+        width: 371px;
+    }
+    .bottom-footer {
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .header {
+        padding: 25px 0;
+    }
+    .menu {
+        padding-left: 15px;
+    }
+    .account-menu {
+        display: none;
+    }
+    .logo {
+        width: 65%;
+        text-align: end;
+        padding-right: 15px;
+    }
+    .banner-text {
+        left: 0%;
+        width: 100%;
+        padding: 0 20px;
+    }
+    .banner-text h1 {
+        font-size: 30px;
+    }
+    .shop {
+        padding: 10px 20px;
+    }
+    .newsletter form input {
+        width: 160px;
+        padding: 3px 3px 3px 15px;
+        font-size: 12px;
+        height: 40px;
+    }
+    .newsletter button {
+        width: 105px;
+        height: 39px;
+        font-size: 12px;
+    }
+    .upper-footer {
+        margin: 50px 10px 0;
+    }
+    .know-more ul li {
+        padding-right: 5px;
+    }
+    .help p, .follow-us p {
+        margin: 30px 0 0px 0px;
+        width: 35%;
+    }
+    .help ul li, .follow-us ul li {
+        padding-right: 15px;
+    }
+    .copyright {
+        margin: 18px 0px 20px;
+    }
+}
+
