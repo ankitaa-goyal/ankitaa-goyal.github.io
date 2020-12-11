@@ -1,0 +1,115 @@
+.sliders{
+	width: 600px;
+	max-width: 100%;
+}
+
+.progress-bar{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 15px;
+	display: block;
+	margin: 0 0 17px;
+	background: rgba(0,0,0,0.1);
+}
+
+.progress-bar__slide{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	display: block;
+	background-color: #ff5e14;
+	/*background-image: repeating-linear-gradient(
+		45deg,
+		#ff5e14,
+		#ccc 10px,
+		#eee 10px,
+		#eee 20px
+	);*/
+	width: 2px;
+	transition: 2s cubic-bezier(.57,.12,.35,1.2);
+}
+/*.progress-bar__percent {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 14px;
+    font-size: 0.93333rem;
+    font-weight: 500;
+    color: #687187;
+    padding: 2px 6px;
+    text-align: center;
+    position: absolute;
+    right: 20px;
+    top: -32px;
+    border-radius: 3px;
+}*/
+.progress-bar__percent{
+	z-index: 500;
+	display: block;
+	padding: 0 10px;
+	font-size: 12px;
+	text-align: center;
+	color: #687187;
+	position: absolute;
+	right: -8px;
+}
+
+.progress-bar--#ff5e14 .progress-bar__slide{
+	background-image: repeating-linear-gradient(
+		45deg,
+		#0D47A1,
+		#0D47A1 10px,
+		#1565C0 10px,
+		#1565C0 20px
+	);
+}
+
+.progress-bar--red .progress-bar__slide{
+	background-image: repeating-linear-gradient(
+		45deg,
+		#b71c1c,
+		#b71c1c 10px,
+		#c62828 10px,
+		#c62828 20px
+	);
+}
+
+.progress-bar--green .progress-bar__slide{
+	background-image: repeating-linear-gradient(
+		45deg,
+		#1B5E20,
+		#1B5E20 10px,
+		#2E7D32 10px,
+		#2E7D32 20px
+	);
+}
+
+.progress-bar--yellow .progress-bar__slide{
+	background-image: repeating-linear-gradient(
+		45deg,
+		#F57F17,
+		#F57F17 10px,
+		#F9A825 10px,
+		#F9A825 20px
+	);
+}
+
+.progress-bar--purple .progress-bar__slide{
+	background-image: repeating-linear-gradient(
+		45deg,
+		#880E4F,
+		#880E4F 10px,
+		#AD1457 10px,
+		#AD1457 20px
+	);
+}
+
+.progress-bar--grey .progress-bar__slide{
+	background-image: repeating-linear-gradient(
+		45deg,
+		#424242,
+		#424242 10px,
+		#616161 10px,
+		#616161 20px
+	);
+}

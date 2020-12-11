@@ -1,0 +1,132 @@
+body{
+	background: url('http://api.thumbr.it/whitenoise-500x500.png?background=212121&noise=424242&density=3&opacity=40');
+	font-family: verdana;
+}
+
+a{
+	display: block;
+	font-family: inherit;
+	text-align: center;
+	color: white;
+}
+
+a:hover{
+	color: white;
+}
+
+a:visited{
+	color: white;
+}
+
+.sliders{
+	width: 600px;
+	max-width: 85%;
+	margin: 0 auto;
+}
+
+h1{
+	color: white;
+	text-align: center;
+	font-family: verdana;
+	font-weight: 100;
+}
+
+
+.progress-bar{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 1.4rem;
+	display: block;
+	margin: 10vh auto;
+	background: rgba(0,0,0,0.1);
+}
+
+.progress-bar__slide{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	display: block;
+	background-image: repeating-linear-gradient(
+		45deg,
+		#ccc,
+		#ccc 10px,
+		#eee 10px,
+		#eee 20px
+	);
+	width: 2px;
+	transition: 2s cubic-bezier(.57,.12,.35,1.2);
+}
+
+.progress-bar__percent{
+	z-index: 500;
+	display: block;
+	padding: 0 10px;
+	font-family: 'verdana';
+	font-size: 12px;
+	text-align: center;
+	line-height: 1.4rem;
+	color: white;
+	position: absolute;
+}
+
+.progress-bar--#ff5e14 .progress-bar__slide{
+	background-image: repeating-linear-gradient(
+		45deg,
+		#0D47A1,
+		#0D47A1 10px,
+		#1565C0 10px,
+		#1565C0 20px
+	);
+}
+
+.progress-bar--red .progress-bar__slide{
+	background-image: repeating-linear-gradient(
+		45deg,
+		#b71c1c,
+		#b71c1c 10px,
+		#c62828 10px,
+		#c62828 20px
+	);
+}
+
+.progress-bar--green .progress-bar__slide{
+	background-image: repeating-linear-gradient(
+		45deg,
+		#1B5E20,
+		#1B5E20 10px,
+		#2E7D32 10px,
+		#2E7D32 20px
+	);
+}
+
+.progress-bar--yellow .progress-bar__slide{
+	background-image: repeating-linear-gradient(
+		45deg,
+		#F57F17,
+		#F57F17 10px,
+		#F9A825 10px,
+		#F9A825 20px
+	);
+}
+
+.progress-bar--purple .progress-bar__slide{
+	background-image: repeating-linear-gradient(
+		45deg,
+		#880E4F,
+		#880E4F 10px,
+		#AD1457 10px,
+		#AD1457 20px
+	);
+}
+
+.progress-bar--grey .progress-bar__slide{
+	background-image: repeating-linear-gradient(
+		45deg,
+		#424242,
+		#424242 10px,
+		#616161 10px,
+		#616161 20px
+	);
+}

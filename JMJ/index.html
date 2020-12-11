@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JMJ Clothing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="header">
+        <div class="container">
+            <div class="col-3">
+                <div class="header-menu">
+                    <ul>
+                        <li><a onclick="openMenu()"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+                        <li class="header-searchbar"><a><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                        <div class="search-toggle" id="searchToggle">
+                            <form>
+                                <input type="text" placeholder="">
+                                <input type="button" value="Search">
+                            </form>
+                        </div>
+                        <li class="header-social-icon"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li class="header-social-icon"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li class="header-social-icon"><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                        <li class="header-social-icon"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                    <div id="sideMenu" class="side-menu">
+                        <a href="javascript:void(0)" class="close-button" onclick="closeMenu()"><i class="fa fa-times" aria-hidden="true"></i></a>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="logo">
+                    <a href="#">
+                        <img src="images/Logo.png">
+                    </a>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="login-cart-menu">
+                    <ul>
+                        <li class="header-login"><a href="#"><i class="fa fa-user" aria-hidden="true"></i><span>Login</span></a></li>
+                        <li class="vertical-seperator"><span>|</span></li>
+                        <li class="header-signup"><a href="#"><span>Signup</span></a></li>
+                        <li class="header-shopping-cart"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="container-fluid ">
+            <div class="hero-image">
+                <img src="images/S1.jpg">
+            </div>
+            <div class="hero-content">
+                <h5>Welcome to JMJ CLOTHING</h5>
+                <h2>
+                    Fashion with love
+                    <br>
+                    for environment
+                </h2>
+                <button>Discover Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="collection">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="women-collection collection-type">
+                        <div class="collection-img">
+                            <img src="images/w1.jpg">
+                        </div>
+                        <div class="collection-content">
+                            <p class="collection-content-title">WOMEN</p>
+                            <a href="#" class="collection-content-link">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="men-collection collection-type">
+                        <div class="collection-img">
+                            <img src="images/men1.jpg">
+                        </div>
+                        <div class="collection-content">
+                            <p class="collection-content-title">MEN</p>
+                            <a href="#" class="collection-content-link">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="accessories-collection collection-type">
+                        <div class="collection-img">
+                            <img src="images/Accessory1.jpg">
+                        </div>
+                        <div class="collection-content">
+                            <p class="collection-content-title">ACCESSORIES</p>
+                            <a href="#" class="collection-content-link">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="collection-display">
+        <div class="container">
+            <div class="collection-title">
+                <h3>New Arrival</h3>
+            </div>
+            <div class="row">
+                <div class="product">
+                    <div class="product-container">
+                        <div class="product-image">
+                            <img src="images/p1.jpg">
+                            <div class="product-image-overlay">
+                                <div class="product-image-overlay-content">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-detail">
+                            <p class="product-name">Product Name</p>
+                            <p class="product-price">$49.99</p>
+                        </div>
+                    </div>
+                    <div class="product-container">
+                        <div class="product-image">
+                            <img src="images/p2.jpg">
+                            <div class="product-image-overlay">
+                                <div class="product-image-overlay-content">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-detail">
+                            <p class="product-name">Product Name</p>
+                            <p class="product-price">$49.99</p>
+                        </div>
+                    </div>
+                    <div class="product-container">
+                        <div class="product-image">
+                            <img src="images/p3.jpg">
+                            <div class="product-image-overlay">
+                                <div class="product-image-overlay-content">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-detail">
+                            <p class="product-name">Product Name</p>
+                            <p class="product-price">$49.99</p>
+                        </div>
+                    </div>
+                    <div class="product-container">
+                        <div class="product-image">
+                            <img src="images/p4.jpg">
+                            <div class="product-image-overlay">
+                                <div class="product-image-overlay-content">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-detail">
+                            <p class="product-name">Product Name</p>
+                            <p class="product-price">$49.99</p>
+                        </div>
+                    </div>
+                    <div class="product-container">
+                        <div class="product-image">
+                            <img src="images/f1.jpg">
+                            <div class="product-image-overlay">
+                                <div class="product-image-overlay-content">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-detail">
+                            <p class="product-name">Product Name</p>
+                            <p class="product-price">$49.99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner">
+        <div class="container-fluid">
+            <div class="banner-img">
+                <img src="images/b1.jpg">
+            </div>
+            <div class="external-border">
+                <div class="banner-content-container">
+                    <p>New trendy collection</p>
+                    <h3 class="offer">Collection <span>50%</span> Offer!</h3>
+                    <button>Shop Collection</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="collection-display">
+        <div class="container">
+            <div class="collection-title">
+                <h3>Featured Products</h3>
+            </div>
+            <div class="row">
+                <div class="product">
+                    <div class="product-container">
+                        <div class="product-image">
+                            <img src="images/f2.jpg">
+                            <div class="product-image-overlay featured-overlay">
+                                <div class="product-image-overlay-content">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-detail">
+                            <p class="product-name">Product Name</p>
+                            <p class="product-price">$49.99</p>
+                        </div>
+                    </div>
+                    <div class="product-container">
+                        <div class="product-image">
+                            <img src="images/p2.jpg">
+                            <div class="product-image-overlay featured-overlay">
+                                <div class="product-image-overlay-content">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-detail">
+                            <p class="product-name">Product Name</p>
+                            <p class="product-price">$49.99</p>
+                        </div>
+                    </div>
+                    <div class="product-container">
+                        <div class="product-image">
+                            <img src="images/p3.jpg">
+                            <div class="product-image-overlay featured-overlay">
+                                <div class="product-image-overlay-content">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-detail">
+                            <p class="product-name">Product Name</p>
+                            <p class="product-price">$49.99</p>
+                        </div>
+                    </div>
+                    <div class="product-container">
+                        <div class="product-image">
+                            <img src="images/p4.jpg">
+                            <div class="product-image-overlay featured-overlay">
+                                <div class="product-image-overlay-content">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-detail">
+                            <p class="product-name">Product Name</p>
+                            <p class="product-price">$49.99</p>
+                        </div>
+                    </div>
+                    <div class="product-container">
+                        <div class="product-image">
+                            <img src="images/f1.jpg">
+                            <div class="product-image-overlay featured-overlay">
+                                <div class="product-image-overlay-content">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-detail">
+                            <p class="product-name">Product Name</p>
+                            <p class="product-price">$49.99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner">
+        <div class="container-fluid">
+            <div class="banner-img">
+                <img src="images/b2.jpg">
+            </div>
+            <div class="external-border">
+                <div class="banner-content-container">
+                    <p>Strong and Elegant Style</p>
+                    <h3 class="offer">Women Fashion</h3>
+                    <button>Shop Collection</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="image-gallery">
+        <div class="container">
+            <div class="image-grid-title">
+                <h3>#JMJClothing</h3>
+            </div>
+            <div class="image-grid">
+                <div class="image-grid-product">
+                    <img src="images/n1.jpg">
+                    <div class="grid-overlay">
+                        <div class="grid-overlay-content">
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-grid-product">
+                    <img src="images/n2.jpg">
+                    <div class="grid-overlay">
+                        <div class="grid-overlay-content">
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-grid-product">
+                    <img src="images/n3.jpg">
+                    <div class="grid-overlay">
+                        <div class="grid-overlay-content">
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-grid-product">
+                    <img src="images/n4.jpg">
+                    <div class="grid-overlay">
+                        <div class="grid-overlay-content">
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-grid-product">
+                    <img src="images/n5.jpg">
+                    <div class="grid-overlay">
+                        <div class="grid-overlay-content">
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-grid-product">
+                    <img src="images/n6.jpg">
+                    <div class="grid-overlay">
+                        <div class="grid-overlay-content">
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-grid-product">
+                    <img src="images/n7.jpg">
+                    <div class="grid-overlay">
+                        <div class="grid-overlay-content">
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-grid-product">
+                    <img src="images/n8.jpg">
+                    <div class="grid-overlay">
+                        <div class="grid-overlay-content">
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-grid-product">
+                    <img src="images/n9.jpg">
+                    <div class="grid-overlay">
+                        <div class="grid-overlay-content">
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-grid-product">
+                    <img src="images/n10.jpg">
+                    <div class="grid-overlay">
+                        <div class="grid-overlay-content">
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h4>Signup for email updates</h4>
+                <form>
+                    <input type="email" id="subscribe" placeholder="ENTER EMAIL">
+                    <input type="submit" id="submit" value="JOIN">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="row footer-menu">
+                <div class="col-4">
+                    <div class="about-text">
+                        <h5 class="footer-col-heading">About JMJ Clothing</h5>
+                        <p class="footer-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="footer-contact-us">
+                        <h5 class="footer-col-heading">Contact Us</h5>
+                        <ul class="footer-text">
+                            <li><p>Email</p></li>
+                            <li><a href="mailto:info@jmjclothing.com">info@jmjclothing.com</a></li>
+                            <li><p>Phone</p></li>
+                            <li><a href="tel:9876543210">9876543210</a></li>
+                            <li><p>Address</p></li>
+                            <li>Street, Town, city, ST, ZIP</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="footer-quick-links">
+                        <h5 class="footer-col-heading">Quick Links</h5>
+                        <ul class="footer-text">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">Women</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="footer-popular">
+                        <h5 class="footer-col-heading">Popular</h5>
+                        <ul class="footer-text">
+                            <li><a href="#">Search</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer-copyright-section">
+                    <div class="col-2">
+                        <div class="copyright">
+                            <p>Copyright &copy;, 2020 JMJClothing</p>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="payment-gateway">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-cc-visa" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-cc-mastercard" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-cc-amex" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-cc-paypal" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-cc-diners-club" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-cc-discover" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/javascript.util/0.12.12/javascript.util.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/function.js"></script>
+</body>
+</html>

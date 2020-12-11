@@ -1,0 +1,1106 @@
+html, body{ 
+    margin: 0;
+    padding: 0;
+}
+body{ 
+    margin: 0px; 
+    padding: 0px; 
+    background: white;  
+    font-size: 12pt; 
+} 
+h1,h2.h3,h4,h5,h6{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}     
+p, ol, ul{ 
+    margin: 0; 
+} 
+  
+p { 
+    line-height:20px; 
+} 
+  
+ol, ul{ 
+    padding: 0; 
+    list-style: none; 
+} 
+      
+.container{     
+    /* Set width of container to  
+        1200px and align center */
+    margin: 0px auto; 
+    max-width: 1180px; 
+    width: 100%;
+
+}
+
+header, section, footer{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    float: left;
+    box-sizing: border-box;
+}
+header{
+    position: relative;
+    float: left; 
+    justify-content: center;
+    align-items: center;
+}
+
+#top-header{
+    text-align: center;
+}
+
+#logo{
+    width: 36%;
+    float: left;
+}
+
+#logo img{
+    width: 120px;
+    background-color: whitesmoke;
+    margin-left: 25px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+}
+
+#menu{
+    float: right;
+    width:64%;
+}
+
+#menu ul li{
+    display: inline-block;    
+    margin:  40px 15px;
+}
+
+#menu ul{
+    width: 100%;
+}
+
+#menu ul li a{
+    text-decoration: none;
+    color: #073d68;
+    padding: 6px;
+}
+#menu ul li a:hover{
+    color:#fff;
+    background-color: #073d68;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+.banner #bannerimg img{
+    width: 100%;
+    height: 300px;
+}
+
+#bannertext {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 160px;
+    right: 120px;
+    width: 400px;
+    padding: 10px 20px;
+}
+
+#bannertext h3{
+    text-align: right;
+    color: white;
+    font-style: oblique;
+    margin-top:5px;
+}
+
+#bannertext p{
+    text-align: right;
+    color: white;
+    margin-top:2px;
+}
+
+.about, .portfolio{
+    position: relative;
+    float: left;
+    justify-content: center;
+    width: 100%;
+}
+
+.heading h2{  
+    font-style: italic;
+    color: #073d68;    
+    font-size: 30px;
+    width: 100%;  
+    text-align: center;
+}
+
+.row .column1, .row .column2{
+    float: left; 
+    width: 50%;
+    background-color: #d3d3d345;
+}
+.row{
+    width: 100%;
+    margin: 0;
+}
+#aboutimg{
+    height: 100%;
+}
+#aboutimg img{
+    max-width: 100%;
+    margin: 14px 0px 14px -15px;
+    padding: 0;
+}
+
+#aboutext {
+    margin: 40px 25px 15px 60px;
+}
+
+#aboutext p{
+   padding: 10px 0;
+}
+
+#aboutext button{
+    border-radius: 20px;
+    padding: 5px;
+    border: 2px solid #073d68;
+    color: #073d68;
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bolder;
+    margin: 10px 0 20px 0;
+}
+#aboutext button:hover{
+    background-color: #073d68;
+    color: #fff;
+    font-weight: bold;
+}
+.rows{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.grid{
+    flex: 25%;
+    padding: 0 16px;
+}
+
+.gridimg, .bgimg{
+    width: 100%;
+    padding: 0;
+    margin: 10px 0;
+    position: relative;
+}
+
+.gridimg img{
+    width: 100%;
+    border-radius: 12px;
+    vertical-align: middle;
+    display: flex;
+}
+
+.hovercontent {
+    height: 100%;
+    border-radius: 12px;
+    background-color: rgba(18, 18, 18, 0.54);
+    color: white;
+    padding: 0 30px;
+    flex-wrap: wrap;    
+    justify-content: flex-start; 
+    position: absolute;
+    top: 0%;
+    z-index: 1;
+    transition: 0.5s ease; 
+    display: none;
+    align-items: center;
+}
+
+.gridimg:hover .hovercontent{
+    display: flex;
+}
+
+.inner-css button{
+    border: 3px solid white;
+    background: none;
+    color: white;
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    margin: 10px 0 20px 0;
+}
+.portfolio .more{
+    display: flex;
+    justify-content:center;
+    margin: 40px 0; 
+}
+.portfolio .more button{
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: #073d68;
+    font-weight: bold;
+    font-size: 15px;
+    width: 120px;
+    height: 40px;
+    padding: 10px;
+}
+.portfolio .more button:hover{
+    color: #073d68;
+    background-color: #fff;
+    border: 3px solid #073d68;
+}
+footer{
+    width: 100%;
+    padding:0;
+    margin:0;
+}
+.top-footer, .bottom-footer{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    float: left;
+    
+}
+.top-footer{
+    background-image: linear-gradient(to left,#073d68, #185f84, #4e85a1);
+    /*background-color: #3e7798;
+    background-image: url("../Images/banner.jpg");
+    background-repeat: no-repeat;*/
+}
+
+.row1 .grid1, .row1 .grid2, .row1 .grid3{
+    position: relative;
+    float: left; 
+    width: 30%;
+    padding: 18px;
+}
+
+.flogo{
+    box-sizing: border-box;
+    width: 100%;  
+    display: flex;
+    justify-content: center;
+}
+.flogo img{
+    width: 60%;    
+}
+.grid2 h3, .grid3 h3 {
+    padding: 20px 0 0;
+    color: #fff;
+}
+.menu ul li {
+    padding: 7px 0;
+    font-size: 16px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.addrs {
+    /* display: flex; */
+    flex-direction: column;
+}
+.addrs ul li {
+    width: 100%;
+    display: flex;
+    margin: 22px 0;
+}
+.addrs address, .addrs a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+.addrs span {
+    color: white;
+    font-size: 19px;
+    width: 27px;
+    text-align: center;
+    margin: 0 7px;
+}
+.bottom-footer{
+    display: flex;
+    margin: 20px;
+}
+.copyright{
+    width:80%;
+    float: left;
+}
+.media{
+    float: left;
+    width: 20%;
+}
+.media ul li{
+    display: inline;
+}
+.media img{
+    width:10%;
+    margin: 0 5px;
+
+}
+
+/*** Contact Us ***/
+.head1 {
+    width: 100%;
+    margin: 35px 0;
+}
+
+.head1 h1, .head1 p{
+    text-align: center;
+}
+.head1 h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.head1 p {
+    font-size: 18px;
+}
+.roww{
+    width: 100%;
+    margin:0;
+    padding:0;
+}
+.roww .col1 {
+    width: 46%;
+    margin: 10px 20px 30px 40px;
+    float: left;
+}
+.roww .col2 {
+    margin: 10px 40px 30px 20px;
+    width: 38%;
+    float: left;
+}
+form {
+    border: 0px solid black;
+    box-shadow: 0px 0px 40px black;
+    padding: 12px 40px;
+}
+.col1 form input, .col1 form textarea{
+    width: 100%;
+    border: 1px solid #9c9b9b;
+    margin: 10px 0px;
+    font-size: 18px;
+    border-radius: 5px;
+    outline: none;
+}
+.col1 form h2, .col2 h2 {
+    font-size: 30px;
+}
+.col1 form label{
+    width: 100%;
+    font-size: 17px;
+}
+.col1 form textarea{
+    height: 100px;
+}
+.col1 form input:hover, .col1 form textarea:hover{
+    border: 1px solid black;
+}
+#message{
+    align-items: center;
+}
+#submit {
+    border-radius: 20px;
+    height: 35px;
+    width: 90px;
+    border: 1px solid #6b6a6a;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 24.9px 0;
+}
+#submit:hover{
+    background: #000;
+    color: #fff;
+    font-weight: normal;
+   /* border: 3px solid black;*/
+}
+.col2 h2 {
+    margin: 36.9px 12px 24.9px;
+}
+.col2 p {
+    margin: 20px 12px;
+    font-size: 17px;
+}
+.col2 ul{
+    margin: 0 12px;
+}
+.col2 ul li {
+    padding: 15px 0;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+.col2 ul li img{
+    width: 45px;
+}
+.col2 ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+    padding: 0 10px;
+}
+.addr {
+    display: flex;
+    flex-direction: column;
+}
+.addr h2 {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    margin: 25px 0;
+}
+.map {
+    width: 100%;
+    margin-bottom: 25px;
+}
+.map iframe{
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+ /*** About Us ***/
+ .overview h1, .spirit h2{
+    width: 100%;
+    color: #073d68;
+}
+.overview h1{
+    font-size: 40px;
+    padding: 0 30px;
+}
+.spirit p {
+    line-height: 25px;
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+.spirit{
+    padding: 0 30px;
+    margin: 0px 0 50px;
+}
+.spirit h2{
+    font-size: 30px;
+}
+.rowww{
+    height: 100%;
+}
+
+.colmn1, .colmn2 {
+    width: 47%;
+    float: left;
+    margin: 0px 15px;
+}
+.mission h3{
+    margin: 0 0 15px;
+}
+.mission p{
+    margin: 0;
+}
+.mission{
+    margin: 40px 0;
+}
+
+#menu ul li .active1{
+    font-weight: bold;
+    color:#fff;
+    background-color: #11587f;
+}
+
+/*** PORTFOLIO ***/
+.ban {
+    background-image: linear-gradient(to right,#185f84,#073d68, #4e85a1);
+    /* background-color: #073d68; */
+}
+.ban h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-size: 60px;
+    margin: 120px 0;
+}
+.porthead h3{
+    font-size: 24px;
+    text-align: center;
+    color: #073d68;
+}
+
+/*** FAQ'S ***/
+.faqs{
+    margin: 50px 0;
+}
+.accordion {
+    background-color: #cadaf3;
+    padding: 20px;
+    margin: 7px 0;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    border: 1px solid #729eb5;
+    color: #125279;
+    font-size: 17px;
+    transition: 0.8s;
+}
+  
+.accordion:hover {
+    background-color: #719eb5;
+    color: #031f5d;
+}
+  
+  .accordion:after {
+    content: '\002B';
+    color: #125279;
+    font-size: 20px;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 16px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.9s ease-in-out;
+  }
+
+/**** Media Queries ****/
+@media only screen and (min-width: 1240px) {
+    #phone{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+    #menu ul li {
+        margin: 15px 10px;
+    }
+    #phone{
+        display: none;
+    }
+    #aboutext {
+        margin: 16px 19px 0px 50px;
+    }
+    #aboutext p {
+        padding: 8px 0;
+    }
+    #aboutext button {
+        margin: 10px 0 17px 0;
+    }
+    #aboutimg img {
+        margin: 14px 0px 14px 0px;
+    }
+    .inner-css h3 {
+        font-size: 18px;
+        margin: 16px 0 9px 0;
+    }
+    .inner-css p {
+        font-size: 14px;
+    }
+    .colmn1, .colmn2 {
+        width: 45%;
+    }
+    .head1 h1 {
+        font-size: 36px;
+        margin-bottom: 18px;
+    }
+    .row1 .grid1, .row1 .grid2, .row1 .grid3 {
+        width: 29%;
+        padding: 15px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    #menu ul li {
+        display: block;
+    }
+    #menu {
+        width: 70%;
+        position: absolute;
+        right: 0;
+        top: 120px;
+        z-index: 9;
+        background: #fff;
+        padding: 20px;
+        width: 350px;
+        box-sizing: border-box;
+    }
+    .phone-display {
+        display: none;
+    }
+    #logo img {
+        position: static;
+        width: 82px;
+    }
+    #phone{
+        display: block;
+        text-decoration: none;
+        float: right;
+        margin: 50px 100px;
+        color: black;
+        font-weight: bold;
+    }
+    .banner #bannerimg img {
+        height: 210px;
+        object-fit: cover;
+        object-position: right;
+    }
+    #bannertext {
+        top: 30px;
+        right: 0;
+        width: 100%;
+        padding: 20px 20px;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+    #bannertext h3 {
+        margin: auto;
+    }
+    #bannertext p {
+        margin: 4px 0;
+    }
+    .heading h2 {
+        font-size: 27px;
+    }
+    #aboutext {
+        margin: 18px 10px 0px 40px;
+    }
+    #aboutext p {
+        padding: 4px 0;
+        line-height: 18px;
+        font-size: 14px;
+    }
+    #aboutext button {
+        padding: 0px;
+        width: 100px;
+        height: 35px;
+        font-size: 13px;
+        margin: 3px 0 12px 0;
+    }
+    #aboutimg img {
+        margin: 17px 0;
+    }
+    .inner-css h3 {
+        font-size: 13px;
+        margin: 10px 0 3px 0;
+    }
+    .inner-css p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .inner-css button {
+        border: 2px solid white;
+        width: 70px;
+        height: 22px;
+        font-size: 10px;
+        margin: 4px 0 10px 0;
+    }
+    .overview {
+        padding: 0px 20px;
+    }
+    .overview h1 {
+        font-size: 30px;
+    }
+    .overview p, .spirit p {
+        line-height: 20px;
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+    .spirit {
+        padding: 0px 20px;
+        margin: 0px 0 40px;
+    }
+    .spirit h2 {
+        font-size: 24px;
+    }
+    .colmn1, .colmn2 {
+        width: 100%;
+        margin: 0;
+        float: none;
+    }
+    .mission {
+        margin: 30px 0;
+    }
+    .head1 {
+        margin: 15px 0 25px;
+    }
+    .head1 h1 {
+        font-size: 30px;
+        margin-bottom: 12px;
+    }
+    .head1 p {
+        font-size: 16px;
+    }
+    .roww .col1 {
+        width: 100%;
+        margin: 10px 15px;
+        float: none;
+    }
+    form {
+        padding: 5px 25px;
+    }
+    .col1 form h2, .col2 h2 {
+        font-size: 24px;
+    }
+    .roww .col2 {
+        width: 100%;
+        margin: 0px 30px;
+        float: none;
+    }
+    .col2 h2 {
+        margin: 30px 0px 20px;
+    }
+    .col2 p {
+        margin: 15px 0px;
+    }
+    .col2 ul {
+        margin: 0;
+    }
+    .col2 ul li {
+        padding: 10px 0;
+    }
+    col2 ul li img {
+        width: 35px;
+    }
+    .col2 ul li a {
+        font-size: 16px;
+        padding: 0 8px;
+    }
+    .addr h2 {
+        font-size: 24px;
+        margin: 35px 0 20px;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    #logo img {
+        width: 75px;
+    }
+    #bannertext {
+        top: 43px;
+    }
+    .heading h2 {
+        font-size: 20px;
+    }
+    #aboutext {
+        margin: 12px 5px 0px 22px;
+    }
+    #aboutext p {
+        line-height: 15px;
+        font-size: 12px;
+    }
+    #aboutext button {
+        width: 91px;
+        height: 27px;
+        font-size: 12px;
+    }
+    .grid {
+        flex: 100%;
+    }
+    .inner-css h3 {
+        font-size: 16px;
+        margin: 10px 0 5px 0;
+    }
+    .inner-css p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .inner-css button {
+        border: 2px solid white;
+        width: 80px;
+        height: 30px;
+        font-size: 12px;
+        margin: 6px 0 10px 0;
+    }
+    .portfolio .more {
+        margin: 0px 0 22px 0;
+    }
+    .portfolio .more button {
+        font-size: 13px;
+        width: 100px;
+        padding: 0px;
+    }
+    .flogo {
+        padding: 30px 0 30px 20px;
+    }
+    .grid2 h3, .grid3 h3 {
+        padding: 0;
+    }
+    .menu ul li {
+        padding: 5px 0;
+        font-size: 15px;
+    }
+    .addr span {
+        padding: 0 3px;
+    }
+    .addr address, .addr a {
+        font-size: 15px;
+    }
+    .copyright p {
+        font-size: 14px;
+    }
+    .overview {
+        padding: 0px 12px;
+    }
+    .overview h1 {
+        font-size: 24px;
+    }
+    .overview p, .spirit p {
+        line-height: 18px;
+        font-size: 14px;
+        margin-bottom: 18px;
+    }
+    .spirit {
+        padding: 0px 10px;
+        margin: 0px 0 30px;
+    }
+    .spirit h2 {
+        font-size: 18px;
+    }
+    .mission {
+        margin: 20px 0;
+    }
+    .mission h3 {
+        margin: 0px 0 10px;
+    }
+    .head1 {
+        margin: 10px 0 20px;
+    }
+    .head1 h1 {
+        font-size: 24px;
+        margin-bottom: 9px;
+    }
+    .head1 p {
+        font-size: 14px;
+    }
+    .roww .col1 {
+        margin: 10px;
+    }
+    form {
+        padding: 5px 18px;
+    }
+    .col1 form label {
+        width: 100%;
+        font-size: 15px;
+    }
+    .col1 form input, .col1 form textarea {
+        margin: 6px 0px;
+        font-size: 16px;
+    }
+    #submit {
+        height: 30px;
+        width: 80px;
+        font-size: 14px;
+        font-weight: 600;
+        margin: 20.9px 0;
+    }
+    .roww .col2 {
+        margin: 0px 15px;
+    }
+    .col2 h2 {
+        margin: 20px 0px 10px;
+    }
+    .col2 p {
+        margin: 10px 0px;
+    }
+    .col2 ul li {
+        padding: 5px 0;
+    }
+    .col2 ul li img {
+        width: 35px;
+    }
+    .col2 ul li a {
+        font-size: 14px;
+    }
+    .addr h2 {
+        font-size: 20px;
+        margin: 24px 0 20px;
+    }
+    .ban h1 {
+        font-size: 50px;
+        margin: 70px 0;
+    }
+    .row1 .grid1, .row1 .grid2, .row1 .grid3 {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        padding: 0px;
+    }
+    .flogo img {
+        width: 25%;
+    }
+    .flogo {
+        padding: 0;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #phone{
+        margin: 21px 25px;
+    }
+    #logo img {
+        width: 50px;
+    }
+    #bannertext {
+        width: 100%;
+        padding: 4px 8px;
+    }
+    .heading h2 {
+        margin: 2px 0;
+    }
+    .row {
+        margin: 3px 0;
+    }
+    .row .column1, .row .column2{
+        width: 100%;
+        background-color: white;
+    }
+    .row .column1{
+        background-color: lightgray;
+    }
+    #aboutext {
+        margin: 7px 10px 0px 10px;
+    }
+    #aboutimg img {
+        margin: 0 0 5px 0;
+    }
+    .menu ul li {
+        padding: 3px 0;
+        font-size: 14px;
+    }
+    .menu ul{
+        display: block;
+    }
+    .addrs span {
+        font-size: 15px;
+        width: 20px;
+    }
+    .addrs address, .addrs a {
+        font-size: 15px;
+    }
+    .bottom-footer {
+        display: block;
+        margin: 6px;
+    }
+    .copyright {
+        width: 100%;
+        font-size: 12px;
+    }
+    .media {
+        width: 100%;
+    }
+    .media ul{
+        width: 150px;
+        margin: 7px 0;
+    }
+    .overview {
+        padding: 0px 7px;
+    }
+    .overview h1 {
+        font-size: 18px;
+    }
+    .overview p, .spirit p {
+        line-height: 16px;
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+    .spirit {
+        padding: 0px 7px;
+        margin: 0px 0 20px;
+    }
+    .spirit h2 {
+        font-size: 14px;
+    }
+    .row {
+        margin: 0px;
+    }
+    .mission {
+        margin: 14px 0;
+    }
+    .mission h3 {
+        margin: 0px 0 3px;
+        font-size: 12px;
+    }
+    .head1 {
+        margin: 0px 0 10px;
+    }
+    .head1 h1 {
+        font-size: 18px;
+        margin-bottom: 3px;
+    }
+    .head1 p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .roww .col1 {
+        margin: 4px 0;
+    }
+    form {
+        padding: 5px;
+        box-shadow: 0px 0px 10px black;
+    }
+    .col1 form h2, .col2 h2 {
+        font-size: 16px;
+    }
+    .col1 form label {
+        font-size: 13px;
+    }
+    .col1 form input, .col1 form textarea {
+        margin: 3px 1px;
+        font-size: 14px;
+    }
+    #submit {
+        height: 20px;
+        width: 60px;
+        font-size: 12px;
+        font-weight: 500;
+        margin: 7.9px 0;
+        border-radius: 10px;
+    }
+    .roww .col2 {
+        margin: 0px 6px;
+    }
+    .col2 p {
+        margin: 3px 0px;
+    }
+    .col2 p {
+        margin: 3px 0px;
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .col2 ul li {
+        padding: 3px 0;
+    }
+    .col2 ul li img {
+        width: 25px;
+    }
+    .col2 ul li a {
+        font-size: 12px;
+        padding: 0 4px;
+    }
+    .addr h2 {
+        font-size: 18px;
+        margin: 15px 0 10px;
+    }
+    .map {
+        margin-bottom: 15px;
+    }
+    .map iframe {
+        width: 100%;
+        height: 199px;
+        border: none;
+    }
+    .ban h1 {
+        font-size: 30px;
+        margin: 50px 0;
+    }
+    
+}
